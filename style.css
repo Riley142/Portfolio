@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Comfortaa:wght@300;400&family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,300&family=Abril+Fatface&family=Roboto+Mono:ital,wght@0,400;0,700;1,400&display=swap');
+/* Coulors and fonts
+
+#F7F7F8 white
+#ffd049 yellow/orange
+#f4486d pink/red
+#71dad8 turquise
+#30bfeb - blue
+#2c3551 fark faded blue
+
+font-family: 'Abril Fatface', cursive;
+font-family: 'Comfortaa', cursive;  300,400
+font-family: 'Roboto', sans-serif;  300 + I / 400 / 700 / 900
+font-family: 'Roboto Mono', monospace;
+*/
+
+html { box-sizing: border-box;}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin:0; padding:0;
+}
+
+body {
+    background-color: #F7F7F8;
+    font-family: 'Comfortaa', sans-serif;
+    text-align: center;
+    color: #2c3551;
+}
+
+/********************NAV/HEADER********************/
+header {
+    height: 100vh;
+    background: url(https://i.ibb.co/F5kDRyj/Waihou.png), #ffffff;
+    background-position: center;
+    background-size: cover;
+}
+
+nav ul {
+    padding-top: 0.25rem;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.nv {
+    padding: 0.35rem;
+    margin: 0.25rem;
+}
+
+.nv > a {
+    padding: 0 2.5rem;
+    color: #F7F7F8;
+    text-decoration: none;
+    font-size: 1.25rem;
+    text-shadow: 2px 0.5px #11111134;
+    letter-spacing: 2px;
+}
+
+.n-home {
+    background-color: #f4486d;
+    border-radius: 25px;
+}
+.n-home:hover {
+    background-color: #71dad8;
+    border-radius: 25px;
+}
+
+.n-about {
+    background-color: #ffd049;
+    border-radius: 25px;
+}
+.n-about:hover {
+    background-color:#2c3551;
+    border-radius: 25px;
+}
+
+.n-projects{
+    background-color: #71dad8;
+    border-radius: 25px;
+}
+.n-projects:hover {
+    background-color: #f4486d;
+    border-radius: 25px;
+}
+
+.n-contact {
+    background-color: #2c3551;
+    border-radius: 25px;
+}
+.n-contact:hover {
+    background-color: #ffd049;
+    border-radius: 25px;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 5rem;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: -1px;
+    color: #2c3551;
+    text-shadow: 2px 0.5px #11111134;
+}
+
+.textanimation{
+    position: relative;
+    top: 45%;
+    width: 20rem;
+    margin: 0 auto;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);
+}
+.typewriter{
+  animation: typewriter 1.75s steps(44) 1s 1 normal both;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 50vw;}
+}
+
+.typewriter2 {
+    animation-delay: 2.8s;
+}
+
+
+/**************** ABOUT *****************/
+#about {
+    height: 100vh;
+    background: #ffd049;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+}
+
+.about-text { width: 65vw; }
+
+p {
+    font-size: 1.3rem;
+    letter-spacing: 2px;
+}
+
+h2 {
+    padding: 0.5rem;
+    font-size: 4rem;
+    font-family: 'Roboto Mono', monospace;
+    color: #f4486d;
+    text-shadow: 2px 0.5px #11111134;
+}
+
+/**************** PROJECTS *****************/
+.bckgr {
+    background: url(https://i.ibb.co/52dfbHN/background.png) #F7F7F8;
+    background-position: center;
+    background-size: cover;
+}
+
+#projects{
+    margin-top: -2rem;
+    height: auto;
+}
+
+#projects  h2 {
+    margin: 5rem;
+    color: #2c3551;
+}
+
+.projects {
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+    gap: 3.5rem 2.5rem;
+}
+
+h3 {
+    font-weight: 300;
+    color: #F7F7F8;
+    text-shadow: 2px 0.5px #11111134;
+    padding: 0.5rem;
+    border-top-right-radius:  25px;
+    border-top-left-radius:  25px;
+}
+
+.colour1 { background: #ffd049;}
+.colour2 { background: #71dad8;}
+.colour3 { background: #f4486d;}
+
+.projects img {
+    width: 100%;
+    border-bottom-right-radius:  10px;
+    border-bottom-left-radius:  10px;
+    background-color: #f4486d;
+    display: block;
+    transition: opacity .3s linear;
+
+}
+
+.projects img:hover {
+    filter: grayscale(100%) opacity(0.65);
+    cursor: pointer;
+}
+
+#projects button{
+    display: inline-block;
+    margin: 5rem 0 1rem 0;
+    width: 250px;
+    padding: 0.75rem;
+    background: linear-gradient(to bottom right, #71dad8, #30bfeb);
+    border-radius: 25px;
+    border: none;
+}
+
+#projects button:hover {
+    background: linear-gradient(to bottom right, #ffd049, #f4486d);
+}
+
+#projects button a{
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: 1.5px;
+    font-size: 1.25rem;
+    text-decoration: none;
+    color: #F7F7F8;
+}
+
+.btn {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+
+/**************** CONTACT *****************/
+#contact {
+    height: 100vh;
+}
+
+.cont {
+    position: relative;
+    top:15%;
+}
+
+.contact-text { padding:5rem; }
+
+h4 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: #2c3551;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+}
+
+.git, .email { padding: 2rem;  }
+
+.git:hover {
+    scale: 1.2;
+}
+
+.email:hover {
+    scale: 1.2;
+}
+
+
+/**************** FOOTER **********************/
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer p {
+    font-size: 1.15rem;
+    font-family: 'Roboto Mono', monospace;
+    color: #ffd049;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f4486d;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+/******************************MEDIA QUERIES**************************/
+
+@media only screen and (max-width: 960px) {
+    header h1 { font-size: 2.75rem;}
+}
+
+
+
+@media only screen and (max-width: 780px) {
+header h1 { font-size: 2rem;}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.25rem 2rem;
+    margin: 0 2rem;
+}
+
+p { font-size: 1.1rem;}
+
+h2 { font-size: 3rem;}
+
+.projects {
+    margin: 0 0.25rem;
+    grid-template-columns: repeat(2, minmax(180px, 1fr));
+    gap: 2rem 1rem;
+}
+}
+
+
+
+@media only screen and (max-width: 500px) {
+.nv > a {font-size: 0.9rem;}
+
+header h1 { font-size: 1.3rem;}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0.25rem 0.15rem;
+    margin: 0 0.1rem;
+}
+.nv > a {
+    padding: 0 0.25rem;
+    font-size: 1.15rem;
+    letter-spacing: 1px;
+}
+
+p {
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+}
+
+h2 { font-size: 2.5rem;}
+
+#about img { width: 40%;}
+
+.about-text { width: 90vw;}
+
+
+
+#projects  h2 {
+    margin: 5rem;
+    color: #2c3551;
+}
+
+.projects {
+    margin: 0 1rem;
+    grid-template-columns: 1fr;
+}
+
+footer p {
+    font-size: 0.9rem;
+    font-family: 'Roboto Mono', monospace;
+    color: #ffd049;
+}
+
+footer a {
+    text-decoration: none;
+    color: #f4486d;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+
+
+
+}
