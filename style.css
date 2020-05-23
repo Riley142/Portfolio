@@ -104,6 +104,7 @@ header h1 {
 
 .textanimation{
     position: relative;
+    display: grid;
     top: 45%;
     width: 20rem;
     margin: 0 auto;
