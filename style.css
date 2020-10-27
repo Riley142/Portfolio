@@ -244,9 +244,10 @@ h3 {
     top:15%;
 }
 
-.contact-text { padding:5rem; }
-
-contact-text p { color:#71dad8; }
+.contact-text { 
+    padding:5rem;
+    color:#71dad8; 
+}
 
 h4 {
     font-family: 'Roboto Mono', monospace;
