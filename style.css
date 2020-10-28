@@ -261,9 +261,13 @@ h4 {
     justify-content: center;
 }
 
-.git, .email { padding: 2rem;  }
+.git, .linked, .email { padding: 2rem;  }
 
 .git:hover {
+    scale: 1.2;
+}
+
+.linked:hover {
     scale: 1.2;
 }
 
